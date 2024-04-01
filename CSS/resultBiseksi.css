@@ -1,0 +1,19 @@
+input{
+    text-align: center;
+}
+
+table {
+    height: 3rem;
+    width: 2rem;
+}
+
+th{
+    padding: 30px;
+    background-color: blue;
+}
+
+td{
+    padding: 30px;
+    color: black;
+    background-color: yellow;
+}

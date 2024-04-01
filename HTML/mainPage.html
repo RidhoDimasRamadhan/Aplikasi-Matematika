@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="/CSS/mainPage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Libre+Baskerville:wght@700&family=Open+Sans&family=PT+Sans:wght@700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"></button> -->
+  <i class="fas fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+
+  <div class="opening1">
+    <div class="kanan">
+      
+      <div class="gambar2" >
+        <img src="/Images/gundar2.png" alt="">
+      </div>
+  
+            <div class="gambar3">
+              <img src="/Images/gundar3.png" alt="">
+            </div>
+    </div>
+  </div>
+
+<!-- opening -->
+<div class="opening" >
+  <div class="kiri">
+    <div class="kotak">
+
+      <div class="atas">
+        <p>APLIKASI BERBASIS WEB</p>
+      </div>
+
+      <div class="middle">
+        <a href="#spl">
+          <p>Sistem Persamaan Non Linier</p>
+        </a>
+      </div>
+      
+      <div class="bawah">
+        <p><a href="#biseksi">Metode Biseksi</a> dan <a href="#regulafalsi">Regula Falsi</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="kanan">
+    <div class="gambar1">
+      <img src="/Images/gundar1.png" alt="">
+    </div>
+ 
+  </div>
+</div>
+<!-- end opening -->
+
+
+<!-- start SPL  -->
+<div class="spl" id="spl">
+  <div class="atas" data-aos="zoom-out-up" data-aos-duration="1000">
+    <p>Sistem Persamaan Non Linier</p>
+  </div>
+  
+  <div class="bawah">
+
+    <div class="pengertian" data-aos="fade-up" data-aos-duration="1000" id="aw">
+      <p id="pengertian">Pengertian</p>
+      <div class="kalimat">
+        <p>
+          Sistem Persamaan Non Linier adalah suatu sistem persamaan yang digunakan untuk menghitung akar persamaan non linier menggunakan satu variable X, f(x), atau secara umum dituliskan dengan formula f(x)=0. Beberapa metode yang  ada diantaranya adalah metode biseksi, regula falsi, newton raphson dan secant. Dalam aplikasi website ini menggunakan 2 buah metode yaitu metode biseksi dan metode regula falsi dengan pertimbangan bahwa ke-2 metode ini adalah metode yang umum digunakan untuk penyelesaian persamaan kuadrat dalam sistem persamaan non linier 
+        </p>
+        <p>Non linier artinya apa?
+          <br>
+          Dikatakan persamann non liniear apabila jumlah pangkat pada variabel bebas memiliki nilai lebih dari 1.
+          <br>
+          Contoh  :  <b>x<sup>2</sup></b> - 7x + 1 
+          </p>
+        </div>
+    </div>
+
+    <div class="numerik" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" id="aw2">
+      <p id="pengertian">Metode Numerik</p>
+      <div class="kalimat">
+        <p>Metode numerik adalah teknik yang digunakan untuk memformulasikan persoalan matematik sehingga dapat dipecahkan dengan operasi hitungan / aritmatika biasa.</p>
+        <p>Metode numerik dapat menyelesaikan persoalan di dunia nyata yang seringkali dalam bentuk non linier dan proses yang sulit diselesaikan dengan metode analitik.</p>
+      </div>
+    </div>
+      
+    <div class="metode" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700" id="aw3">
+      <p id="pengertian">Penyelesaian Persamaan Non Linier</p>
+        <div class="kalimat">
+          <h3>Metode Tertutup</h3>
+          <ul>
+            <li>Mencari akar pada range [a,b] tertentu.</li>
+            <li>Dalam range [a,b] dipastikan terdapat satu akar.</li>
+            <li>Hasil selalu konvergen, tetapi relatif lambat dalam mencari akar.</li>
+            <h4 style="font-weight: lighter;">Metode ini ada 2 :</h4>
+            <ol>
+              <li>Metode Biseksi (bagi dua).</li>
+              <li>Metode Regula Falsi.</li>
+            </ol>
+          </ul>
+
+          <h3>Metode Terbuka</h3>
+          <ul>
+            <li>Diperlukan tebakan awal.</li>
+            <li>X<sub>n</sub> dipakai untuk menghitung X<sub>n+1</sub>.</li>
+            <li>Hasil dapat konvergen atau divergen.</li>
+            <li>Cepat dalam mencari akar.</li>
+            <li>Tidak selalu konvergen (bisa divergen) artinya akarnya belum tentu dapat.</li>
+            <h4 style="font-weight: lighter;">Metode ini ada 3 :</h4>
+            <ol>
+              <li>Metode Secant.</li>
+              <li>Metode Iterasi Tetap.</li>
+              <li>Metode Newton Rapson.</li>
+            </ol>
+          </ul>
+      </div>
+    </div>
+</div>
+<!--END SPL  -->
+
+
+<!-- START BISEKSI -->
+<div class="biseksi" id="biseksi">
+  
+  <div class="kiri">
+    <div class="kalimat"  data-aos="zoom-out-up" data-aos-duration="1500">
+      <p>Metode Biseksi</p>
+    </div>
+  </div>
+  
+  <div class="kanan">
+    <div class="langkah"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
+      <h1 >Konsep Metode Biseksi</h1>
+      <ul style="list-style-type: none">
+
+        <li>Ide awal metode ini adalah metode tabel, dimana 
+          area dibagi menjadi N bagian. Hanya saja metode 
+          biseksi ini membagi range menjadi 2 bagian, dari 
+          dua bagian ini dipilih bagian mana yang 
+          mengandung akar sedangkan bagian yang tidak 
+          mengandung akar dibuang. Hal ini dilakukan 
+          berulang-ulang hingga diperoleh akar persamaan.</li>
+        <br>
+        
+        <!-- <li style="color: rgb(243, 71, 65);font-weight: bolder;">Tahapan Metode Biseksi</li> -->
+      </ul>
+
+      <h3 style="color: rgb(243, 71, 65);font-weight: bolder; ;"  data-aos-duration="500">Kelebihan Biseksi</h3>
+        <ol  data-aos-duration="500" style="list-style-type: none">
+          <li>Selalu berhasil menemukan akar (solusi) yang dicari, atau dengan kata lain selalu konvergen.</li>
+        </ol>
+
+      <h3 style="color: rgb(243, 71, 65);font-weight: bolder;"   data-aos-duration="800" >Kekurangan Biseksi</h3>
+        <ol  data-aos-duration="1100" >
+          <li>Metode biseksi dapat dilakukan apabila ada akar persamaan pada interval yang diberikan.</li>
+          <li>Jika ada beberapa akar pada interval yang diberikan, maka hanya satu akar saja yang dapat ditemukan.</li>
+          <li>Memiliki proses iterasi yang banyak sehingga memperlama proses penyelesaian.</li>
+        </ol>
+      </div>
+    </div>
+    
+    <div class="penyelesaian" data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="500"
+    data-aos-offset="10">
+      <a href="/HTML/biseksi.html"><button><p>Pengaplikasian</p></button></a>
+    </div>
+    
+  </div>
+  <!--END BISEKSI  -->
+  
+  
+
+  <!-- START REGULAGALSI  -->
+  <div class="regulaFalsi" id="regulafalsi">
+    
+  <div class="kiri">
+    <div class="langkah" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500">
+
+      <h1>Konsep Metode Regula Falsi</h1>
+      <ul style="list-style-type: none;">
+        <li>Metode Regula Falsi adalah salah satu metode numerik yang digunakan untuk mencari akar dari suatu persamaan dengan memanfaatkan kemiringan dan selisih tinggi dari dari dua titik batas range. Sebenarnya metode ini hampir sama dengan metode biseksi, tapi titik pendekatan yang digunakan pada metode ini berbeda dengan metode biseksi. 
+        </li>
+        <br>
+      </ul>
+
+      <h3 style="color: rgb(243, 71, 65);font-weight: bolder;">Kelebihan Regula Falsi</h3>
+        <ol style="list-style-type: none;">
+          <li>Membutuhkan lebih sedikit iterasi daripada metode biseksi</li>
+        </ol>
+
+      <h3 style="color: rgb(243, 71, 65);font-weight: bolder;">Kekurangan Regula Falsi</h3>
+        <ol>
+          <li>Tidak bisa mencari bilangan imaginer / kompleks, jika terdapat lebih dari satu akar harus dicari secara satu persatu.</li>
+          <li>Untuk mendapatkan akarnya lebih lambat mencapai konvergen, tetapi jika dibandingkan dengan biseksi lebih cepat. Rumus yang digunakan untuk mendapatkan akar dengan metode Regula Falsi lebih rumit jika dibandingkan dengan biseksi.</li>
+        </ol>
+
+    </div>
+
+    <div  data-aos="fade-zoom-in"
+    data-aos-delay="1000"
+    data-aos-offset="10" id="applikasian">
+      <a href="/HTML/RegulaFalsi.html" ><button><p>Pengaplikasian</p></button></a>
+    </div>
+    
+  </div>
+
+  <div class="kanan" >
+    <div class="kalimat" data-aos="fade-down" data-aos-duration="2500" data-aos-delay="500">
+      <p>Metode Regula Falsi</p>
+    </div>
+
+   
+  </div>
+
+
+ 
+
+</div>
+
+
+<!-- END REGULAFALSI -->
+
+
+
+
+
+</body>
+<script src="https://kit.fontawesome.com/08692cf6f2.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+// End
+
+  AOS.init();
+</script> 
+</html> 

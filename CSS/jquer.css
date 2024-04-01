@@ -1,0 +1,14 @@
+div{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    animation-name: kotak;
+    animation-duration: 10s;
+    animation-iteration-count: none;
+}
+@keyframes kotak{
+    from{background-color: red;}
+    to{
+        background-color: blue;
+    }
+}

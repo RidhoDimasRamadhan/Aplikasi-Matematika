@@ -1,0 +1,267 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 22;
+}
+
+/* Navbigasi Bar */
+.navbar {
+    position: relative;
+    background-color: rgb(236, 231, 231);
+    height: 4rem;
+    width: 100%;
+    box-shadow: 0 2px 7px .4px rgb(165, 160, 160);
+}
+
+.navbar .link{
+    position: relative;
+    float: left;
+    margin-top: 1rem;
+}
+.navbar .link a{
+    text-decoration: none;
+    text-align: center;
+    color:#000000;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.navbar .materi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.navbar .materi p{
+    margin-top: 1.5rem;
+    margin-left: -2.5rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navbar .logo img{
+    width: 7rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin-top: -2.6rem;
+}
+/* ~ End ~ */
+
+/* Kumpulan Awal */
+.KumpulanAwal{
+    margin-top: 4rem;
+}
+.KumpulanAwal p{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    top: -1rem;
+    font-weight: 600;
+    color: black;
+    
+}
+/* ~End~ */
+
+/* Masukkan */
+.Masukan{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Masukan .waw button{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 15rem;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 6px;
+    margin: 0 3.5rem 1rem 3.5rem;
+    letter-spacing: .1rem;
+}
+.Masukan .waw .inputan{
+    border: 2px solid #763996; 
+    border-radius: 10px;
+    width: 18rem;
+    font-size: 1.5rem;
+    height: 4rem;
+    padding: 6px;
+    margin: 0 2rem 1rem 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.Masukan .KlikSaya{
+    padding: .2rem;
+    background-color: #763996; 
+    color: white;
+    font-weight: 600;
+}
+.Masukan .inputan{
+    height: 2.2rem;
+}
+/* ~End~ */
+
+
+/* Keluaran */
+.keluaran #kumpulanSoal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.keluaran #kumpulanSoal .PalingKanan{
+    font-size: 2rem;
+}
+/* ~ End ~ */
+
+
+/* Kumpulan 1 */
+.kumpulan1{
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.kumpulan1 .kalimat,
+.kumpulan1 .inputanInduk{
+    width: 100%;
+}
+
+.kumpulan1 .kalimat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kumpulan1 .kalimat h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: black;
+    position: relative;
+    font-size: 1rem ;
+    text-align: center;
+}
+
+.kumpulan1 .inputanInduk{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.kumpulan1 .inputanInduk .inputan2{
+    height: 4rem;
+    padding: 6px;
+    margin: 0 2rem 1rem 2rem;
+    border: 3px solid #763996; 
+    border-radius: 10px;
+    width: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.hasil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hasil #tekan{
+    position: relative;
+    background-color: #763996;
+    color: white;
+    font-weight: 700;
+    width: 15rem;
+    height: 4rem;
+    padding: 6px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* ~End~ */
+
+@media(max-width : 1248px){
+    .Masukan .waw .inputan{
+        margin: 0 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+     }
+     .hasil{
+         margin-bottom: 1rem;
+     }
+}
+
+@media(max-width : 930px){
+    .Masukan .waw2 button{
+        margin: 0 1rem;
+    }
+    
+}
+
+@media(max-width : 628px){
+    .navbar .logo img{
+        width: 6rem;
+        margin-top: -2.2rem;
+    }
+    .navbar .materi p{
+        margin-left: -3rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width : 473px){
+    .navbar .link{
+        margin-top: 1.5rem;
+        margin-left: -1rem;
+
+    }
+    .navbar .link a{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    .navbar .logo img{
+        position: relative;
+        width: 5rem;
+        margin-top: -1.8rem;
+        margin-right: .3rem;
+    }
+    .navbar .materi p{
+        font-size: .8rem;
+        font-weight: 800;
+    }
+}
+
+
+@media(max-width : 385px){
+    .navbar .logo img{
+        width: 21vw;
+        margin-right: -.1rem;
+    }
+}
+@media(max-width : 330px){
+    .navbar .materi p{
+        font-size: .7rem;
+    }
+    .navbar .logo img{
+        width: 19vw;
+        margin-right: -.1rem;
+    }
+}

@@ -1,0 +1,889 @@
+html{
+
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+
+}
+
+/* scrool to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: rgb(137, 77, 172);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  /* end */
+
+  
+/* general */
+.opening,
+.biseksi,
+.regulaFalsi{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.awal,
+.tengah,
+.akhir{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+/* end Genereal ~ */
+
+
+.opening1{
+    position: absolute;
+    display: inline;
+    right: 0;
+    top: 0;
+}
+
+.opening1 .kanan .gambar2{
+    float: left;
+    position: relative;
+    margin: 8rem -19rem 0 0;
+    z-index: 1;
+    animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.opening1 .kanan .gambar2 img{
+    width: 40rem;
+    z-index: 1;
+}
+.opening1 .kanan .gambar3{
+    float: right;
+    position: relative;
+    z-index: -33;
+    margin: 0rem 2rem 0 -8rem;
+    animation-name: example3;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+}
+.opening1 .kanan .gambar3 img{
+    z-index: -33;
+    width: 58rem;
+
+}
+
+
+/* Opening */
+.opening{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.opening .kiri{
+    width: 50%;
+}
+
+
+.opening .kiri .kotak .atas p {
+font-size: 1rem;
+font-family: 'PT Sans', sans-serif;
+font-weight: 100;
+letter-spacing: .3rem;
+}
+
+.opening .kiri .kotak .middle p{
+font-size: 60px;
+line-height: 3.5rem;
+font-family: 'PT Sans', sans-serif;
+text-align: center;
+}
+.opening .kiri .kotak .bawah{
+    margin-top: 2rem;
+}
+.opening .kiri .kotak .bawah p{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(17, 17, 17);
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.opening .kiri .kotak .bawah a{
+    animation: ortu 1000ms;
+    animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+.opening .kiri .kotak{
+    position: relative;
+    background-color :rgb(255, 255, 255);
+    border-radius: 30px;
+box-shadow :rgba(0, 0, 0, .1) -5px 5px 5px 0px;
+width : 550px;
+box-sizing :border-box;
+height :415px;
+line-height :25.6px;
+text-align :left;
+bottom: -220px;
+position: relative;
+padding: 2rem;
+float: right;
+margin: 8rem 4rem 0 0;
+z-index: 3;
+border: 2px solid black;
+animation: grow-and-shrink 4000ms;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+.opening .kiri .kotak .middle{
+    animation: spl 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.opening .kiri .kotak p{
+    color : rgb(17, 17, 17);
+    font-family : "Open Sans", sans-serif;
+    font-size : 16px;
+}
+.opening .kiri 
+.opening .kanan{
+    width: 50%;
+}
+
+
+.opening .kanan .gambar1{
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
+        margin-left: -1rem;
+        animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.opening .kanan .gambar1 img{
+    width: 46rem;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end Opening */
+
+
+/* SPL */
+.spl{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.spl .atas{
+    align-items: center;
+    margin: 0 1rem;
+}
+.spl .atas p{
+    font-size: 5rem;
+    font-family: 'Arvo', serif;
+    text-align: center;
+    text-shadow: -.2rem .1em  rgba(0, 0, 0, .3);
+
+}
+
+.spl .bawah {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: justify;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.spl .bawah .pengertian {
+    border: 2px solid black;
+    box-shadow: .3rem .4em .4rem  rgba(0, 0, 0, .3);
+    width: 25%;
+    border-radius: 13px;
+    padding: 0 2rem;
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+#pengertian{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.spl .bawah .pengertian p{
+    font-family: sans-serif;
+}
+
+.spl .bawah .kalimat p  {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2rem;
+    font-family: sans-serif;
+}
+
+.spl .bawah .numerik{
+    font-family: sans-serif;
+    box-shadow: .3rem .4em .4rem  rgba(0, 0, 0, .3);
+    width: 25%;
+    border-radius: 13px;
+    border: 2px solid black;
+    padding: 0 2rem;
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.spl .bawah .metode{
+    width: 25%;
+    border-radius: 13px;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-family: sans-serif;
+    box-shadow: .3rem .4em .4rem  rgba(0, 0, 0, .3);
+    padding: 0 2rem;
+    line-height: 1.5rem;
+}
+/* END */
+
+
+/* BISEKSI */
+.biseksi{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.biseksi .kiri,
+.biseksi .kanan{
+    width: 49%;
+}
+.biseksi .kiri{
+    background-image: linear-gradient(white,rgb(255, 198, 247),white);
+
+}
+
+.biseksi .kiri .kalimat{
+    position: relative;
+    align-items: center;
+    width: 36rem;
+    border: 1px solid white;
+    margin: 5rem auto;
+    background-color: white;
+    
+}
+.biseksi .kiri p{
+    font-size: 8rem;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+.biseksi .penyelesaian{
+    margin-top: -14rem;
+    margin-left: 31rem;
+}
+.biseksi .penyelesaian button{
+    width: 13rem;
+    height: 4rem;
+    background-color: rgb(137, 77, 172);
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.biseksi .penyelesaian a p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+
+.biseksi .kanan .langkah{
+    margin: 2rem 4rem 0 4rem;
+    position: relative;
+    text-align: justify;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.biseksi .kanan .langkah h1{
+    text-align: center;
+}
+.biseksi .kanan .langkah li{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+/* END */
+
+
+/* REGULAFALSI */
+.regulaFalsi{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    
+}
+
+.regulaFalsi .kiri,
+.regulaFalsi .kanan{
+    width: 49%;
+}
+.regulaFalsi .kanan .kalimat{
+    position: relative;
+    align-items: center;
+    width: 40rem;
+    margin: 15rem auto;
+}
+.regulaFalsi .kanan p{
+    font-size: 6rem;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+
+
+.regulaFalsi .kiri .langkah{
+    margin: 4rem 4rem .8rem 4rem;
+position: relative;
+    border: 2px solid black;
+box-sizing :border-box;
+border-radius: 30px;
+background-color :rgb(255, 255, 255);
+padding-right: 2rem;
+padding-left: 1rem;
+box-shadow: .3rem .4em .4rem  rgba(0, 0, 0, .3);
+}
+
+.regulaFalsi .kiri .langkah li{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.regulaFalsi .kiri .langkah h1{
+    text-align: center;
+}
+
+.regulaFalsi .kiri .langkah h3{
+    margin-left: 1rem;
+}
+/* ~~ END ~~ */
+#applikasian{
+    right: 31rem;
+    top: 29rem;
+}
+
+
+#applikasian button{
+    position: relative;
+    width: 13rem;
+    height: 4rem;
+    background-color: rgb(137, 77, 172);
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+}
+
+#applikasian a p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+
+
+
+/* RESPONSIVE */
+
+    @media(min-width : 1249px){
+        .opening .kiri{
+            margin: -3rem 0 0 3rem;
+        }
+        .biseksi .penyelesaian{
+            margin-top: -14rem;
+            margin-left: 28rem;
+        }
+
+        .penyelesaian{
+            margin: -12rem 0 0 47rem;   
+        }
+        #applikasian{
+            position: absolute;
+            margin-top: 2rem    ;
+        }
+        .regulaFalsi{
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+@media(max-width : 1248px){
+    .biseksi{
+        height: auto;
+    }
+.biseksi .kiri,
+.biseksi .kanan{
+width:100%;
+}
+
+.biseksi .kiri .kalimat{
+    margin: auto;
+    width: 84vw;
+}
+.biseksi .kiri p{
+    font-size: 5rem;
+}
+.biseksi .kanan .langkah{
+    margin: 0rem 1rem;
+}
+.biseksi .penyelesaian{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.regulaFalsi{
+    height: auto;
+    flex-wrap: wrap-reverse;    
+}
+.regulaFalsi .kanan,
+.regulaFalsi .kiri{
+    width: 100%;
+}
+.regulaFalsi .kanan .kalimat{
+    width: 85vw;
+        margin: 0rem auto;
+}
+
+.regulaFalsi .kanan p{
+    font-size: 5rem;
+    text-align: center;
+}
+.regulaFalsi .kiri .langkah{
+    margin: 0 1rem;
+}
+.penyelesaian,
+#applikasian{
+ display: flex;
+ position: relative;
+ justify-content: center;
+ bottom: 0;
+ left: 0;
+ margin:0 auto;
+ margin-top: 1rem;
+}
+
+.opening1 .kanan .gambar2{
+    margin: 8rem -19rem 0 0;
+}
+.opening1 .kanan .gambar2 img{
+    width: 30rem;
+}
+.opening1 .kanan .gambar3{
+    margin: 0 2rem 0 -8rem;
+}
+.opening1 .kanan .gambar3 img{
+    z-index: -33;
+    width: 48rem;
+}
+
+
+.opening .kiri .kotak{
+    padding-top: 0;
+width : 35vw;
+height: 350px;
+margin: 7rem 0rem 0 2rem;
+} 
+.opening .kiri .kotak .atas p {
+    font-size: .9rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: .3rem;
+    }
+    
+    .opening .kiri .kotak .middle p{
+    font-size: 50px;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
+    
+    .opening .kiri .kotak .bawah p{
+        font-size: 1rem;
+    }
+
+
+.opening .kanan .gambar1{
+    margin-top: 2rem;
+    margin-left: 1rem;
+
+}
+.opening .kanan .gambar1 img{
+    width: 50vw;
+}
+
+#terakhir button {
+    margin-bottom: 1rem;
+}
+}
+
+@media(max-width : 978px){
+    .spl .bawah .pengertian{
+        width: 35%;
+    }
+
+    .spl .bawah .numerik{
+        width: 35%;
+    }
+
+    .spl .bawah .metode{
+        width: 50%;
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width : 885px){
+    .opening .kiri .kotak{
+        width: 400px;
+            }
+}
+
+@media(max-width : 882px){
+    .opening .kiri .kotak{
+        float: left;
+margin: 7rem 0rem 0 2rem;
+
+    }
+
+    .opening .kanan .gambar1{
+        margin: 7rem 0 0 -1rem;
+    }
+    .opening .kanan .gambar1 img{
+        width: 60vw;
+    }
+
+    
+}
+@media(max-width : 850px){
+    .spl {
+        margin-top: 5rem;
+    }
+    .opening1{
+        display: flex;
+justify-content: center;
+align-items: center;
+}
+    .opening1 .kanan .gambar2 img{
+        margin-top: -4rem;
+    }
+    .opening1 .kanan .gambar3 img{
+        margin-left: 12rem;
+        width: 35rem;
+    }
+    .opening{
+        flex-wrap: wrap-reverse;    
+        height: auto;
+    }
+    .opening .kanan, 
+    .opening .kiri{
+        width: 100%;
+    }
+    .opening .kanan .gambar1{
+        display: flex;
+justify-content: center;
+align-items: center;
+        margin: 2rem auto;
+    }
+    .opening .kanan .gambar1 img{
+        width: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .opening .kiri{
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+    }
+
+    .opening .kiri .kotak{
+        position: relative;
+        background-color :rgb(255, 255, 255);
+        border-radius: 30px;
+    box-shadow :rgba(0, 0, 0, .1) -5px 5px 5px 0px;
+    width : 550px;
+    box-sizing :border-box;
+    height :330px;
+    line-height :25.6px;
+    text-align :left;
+    padding: 2rem;
+    margin: -13rem 2rem 14rem 2rem ;
+    z-index: 3;
+
+    }
+    .opening .kiri .kotak .atas p {
+        font-size: 1rem;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 100;
+        letter-spacing: .3rem;
+        }
+        
+        .opening .kiri .kotak .middle p{
+        font-size: 60px;
+        line-height: 3.5rem;
+        font-family: 'PT Sans', sans-serif;
+        text-align: center;
+        }
+        
+        .opening .kiri .kotak .bawah p{
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            color: rgb(17, 17, 17);
+            font-size: 1rem;
+            text-align: center;
+        }
+        
+        
+        
+        .opening .kiri .kotak p{
+            color : rgb(17, 17, 17);
+            font-family : "Open Sans", sans-serif;
+            font-size : 16px;
+        }
+}
+
+@media(max-width : 833px){
+    .opening1 .kanan .gambar2{
+        top: -2rem;
+        right: -4rem;
+    }
+    .opening1 .kanan .gambar3 img{
+        margin-top: -38rem;
+        width: 35rem;
+    }
+}
+
+@media(max-width : 600px){
+.opening .kiri .atas{
+    margin-top: -2rem;
+}
+
+.opening1{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+}
+
+.opening1 .kanan .gambar2{
+    top: -2rem;
+    right: -4rem;
+}
+.opening1 .kanan .gambar3{
+    right: -4rem;
+}
+    .spl .atas p{
+        font-size: 14vw;
+    }
+    .biseksi .kiri p{
+        font-size: 4rem;
+    }
+    .regulaFalsi .kanan p{
+        font-size: 4rem;
+    }
+
+
+    .spl .bawah .pengertian{
+        width: 70%;
+    }
+
+    .spl .bawah .numerik{
+        margin-top: 2rem;
+
+        width: 70%;
+    }
+
+    .spl .bawah .metode{
+        width: 70%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media(max-width : 437px){
+    .opening .kanan .gambar1 img{
+        width : 100vw;
+    }
+    .opening1 .kanan .gambar2{
+        top: -2rem;
+    }
+    .opening1 .kanan .gambar2 img{
+        width: 25rem;    
+    }
+    .opening1 .kanan .gambar3 img{
+        width: 28rem;    
+    }
+
+    .opening .kiri .kotak .middle {
+        font-size: 3rem;
+        padding: 15px;
+    }
+    .opening .kiri .kotak .bawah{
+        margin-top: -.2rem;
+    }
+    .opening .kiri .kotak .bawah p{
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width : 363px){
+    .opening1 .kanan .gambar2{
+        top: -3rem;
+        right: -4rem;
+    }
+    .opening1 .kanan .gambar3{
+        top: -3rem;
+        right: -4rem;
+    }
+
+    .opening .kiri .kotak{
+    width :360px;
+    margin: -13rem 2rem 14rem 2rem ;
+    }
+
+    .opening .kiri .kotak .middle p{
+        font-size: 3.3rem;
+    }
+    .spl .bawah .kalimat p  {
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+    .spl .bawah .metode{
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    .biseksi .kanan .langkah li{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .regulaFalsi .kiri .langkah li{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* ~ END RESPONSIVE ~ */
+
+.spl .bawah #aw:hover{
+    color: black;
+    border: 3px solid black;
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    transition: box-shadow 0.1s, transform 0.9s;
+    transform: scale(1.050) ;
+    background-color: rgb(210, 171, 236);
+    
+}   
+.spl .bawah #aw2:hover{
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    transition: box-shadow 0.1s, transform 0.9s;
+    transform: scale(1.050) ;
+    background-color: rgb(240, 240, 132);
+}
+
+.spl .bawah #aw3:hover{
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    transition: box-shadow 0.1s, transform 0.9s;
+    transform: scale(1.050) ;
+    background-color: #f87d7d;
+}   
+
+@keyframes example {
+    50% {transform: translateY(40px);transform: translateY(30px);
+    }
+  }
+
+  @keyframes example2 {
+    50% {transform: translateX(40px);transform: translateX(30px);
+    }
+  }
+
+  @keyframes example3 {
+    50% {transform: translateX(-10px);transform: translateX(-50px);
+    }
+  }
+
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(.9);
+    }
+  }
+
+  @keyframes spl{
+      
+    0% {
+      transform: scale(.9);
+      
+      border:2px solid black;
+      border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(141, 12, 226);    
+}
+50% {
+    transform: scale(1);
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgb(233, 233, 11);
+}
+100% {
+    transform: scale(.9);
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #ff0000;
+    }
+  }
+
+
+  @keyframes ortu{
+
+    from{color: black;font-weight: bolder;}
+    to{transform: translate(3);color: black;font-weight: bolder; text-decoration: underline;}
+  }

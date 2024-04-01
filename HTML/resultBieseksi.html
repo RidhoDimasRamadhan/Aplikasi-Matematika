@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/resultBiseksi.css">
+</head>
+<style>
+    #bangke{
+color: red;
+    }
+</style>
+<body>
+    <h1>ri</h1>
+    <table id="" style="font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;">
+        <div id="tebel"><thead>
+
+            </thead>
+        </div>
+        <thead id="tebel"><tr height = '50px' width = '150px'></tr></thead>
+        <div id="tebel"><tr height = '50px' width = '150px' id="bangke">aaa</tr></div>
+    </table>
+    <h1 id="wakwaw" style="color: #277b78;text-decoration: chartreuse;" >
+        <a href="/HTML/Home.html" style="text-decoration: none;">aaa</a>
+    </h1>
+<!-- <div id="wawa">a</div>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>NO</th>
+                <th>X<sub>n</sub></th>
+                <th>X<sub>n+1</sub></th>
+                <th>F(X<sub>n</sub>)</th>
+                <th>F(X<sub>n+1</sub>)</th>
+                <th>X<sub>mid</sub></th>
+                <th>F(X<sub>mid</sub>)</th>
+            </tr>
+        </thead>
+        
+            <tbody>
+                <tr>
+                    <td id="1"></td>
+                    <td id="2"></td>
+                    <td id="3"></td>
+                    <td id="4"></td>
+                    <td id="5"></td>
+                    <td id="6"></td>
+                    <td id="7"></td>
+                </tr>
+            </tbody>
+    </table>
+
+    <div id="text">a</div> -->
+
+</body>
+<script src="/JAVA SCRIPT/biseksi.js"> 
+
+//  document.getElementById('buttonKiri').onclick= function(){
+//     var MyKiri = document.getElementById('InputanKiri').value;
+//     if(MyKiri >0){
+//         document.getElementById('kiri').innerHTML= MyKiri +'x';
+//     }else if (MyKiri<0){
+//         document.getElementById('kiri').innerHTML= MyKiri +'x';
+//     }else if(Mykiri = "0" || MyKiri == 0){
+//         document.getElementById('kiri').innerHTML= 'x';
+//     }else{
+//         alert('Anda harus memasukan angka');
+//     }
+// }
+
+// document.getElementById('buttonTengah').onclick= function(){
+//     var MyTengah = document.getElementById('InputanTengah').value;
+//     if(MyTengah > 0){
+//         document.getElementById('tengah').innerHTML= '+' + MyTengah +'x';
+//     }else if (MyTengah < 0){
+//         document.getElementById('tengah').innerHTML= MyTengah +'x';
+//     }else{
+//         alert('Anda harus memasukan angka');
+//     }
+// }
+
+// document.getElementById('buttonKanan').onclick= function(){
+//     var MyKanan = document.getElementById('InputanKanan').value;
+//     if(MyKanan > 0){
+//         document.getElementById('kanan').innerHTML= '+' + MyKanan ;
+//     }else if(MyKanan < 0 ){
+//         document.getElementById('kanan').innerHTML = MyKanan ;
+//     }else{
+//         alert('Anda harus memasukan angka');
+//     }
+// }
+
+// document.getElementById('buttonPalingKanan').onclick = function(){
+//     var MyPalingKanan = document.getElementById('InputanPalingKanan').value;
+//     if(MyPalingKanan > 0){
+//         document.getElementById('PalingKanan').innerHTML=MyPalingKanan;
+//     }else if(MyPalingKanan < 0 ){
+//         document.getElementById('PalingKanan').innerHTML = MyPalingKanan;
+//     }else{
+//         alert('Anda harus memasukan angka');
+//     }
+// }
+
+       
+//             document.getElementById('tekan').onclick= function()
+//             {      
+//                 let nama = parseFloat(document.getElementById('xninput').value);
+//             let bee = parseFloat(document.getElementById('xn+1input').value);
+//             let kenadeh = parseFloat(document.getElementById('problemm').value);
+
+//             let MyKirii = parseFloat(document.getElementById('InputanKiri').value);
+//             let MyTengahh = parseFloat(document.getElementById('InputanTengah').value);
+//             let MyKanann = parseFloat(document.getElementById('InputanKanan').value);
+//             let MyPalingKanann = parseFloat(document.getElementById('InputanPalingKanan').value);
+//                 function func(x)
+//                 {
+//                     let fx =(MyKirii*x**MyPalingKanann)+(MyTengahh*x)+MyKanann;
+//                     return fx;
+//                 }
+                
+//                 function bisection(a, b)
+//                 {
+//                     if (func(a) * func(b) >= 0)
+//                     {
+//                         document.write("Tidak bisa dilanjutkan");
+//                         return;
+//                     }
+                    
+//                     let i = 1;
+//                     var z;
+//                     do{
+//                         z = ((a+b)/2);
+        
+//                         document.write("<table border = '2' width='500' align= 'center' >");
+//                             document.write("<thead bgcolor = 'F87474'>");
+//                                 document.write("<tr height = '50px' width = '150px'>");
+//                                     document.write(" <th>No</th>")
+//                                     document.write(" <th>X<sub>n</sub></th>")
+//                                     document.write(" <th>X<sub>n+1</sub></th>")
+//                                     document.write(" <th>F(X<sub>n</sub>)</th>")
+//                                     document.write(" <th>F(X<sub>n+1</sub>)</th>")
+//                                     document.write(" <th>X<sub>mid</sub></th>")
+//                                     document.write(" <th>F(X<sub>mid</sub>)</th>")
+//                                 document.write("</tr>");
+//                             document.write("</thead>");
+        
+//                             document.write("<tbody bgcolor = 'white'>")
+//                                 document.write("<tr>")
+//                                     document.write("<td align ='center'>"+ i +"</td>")
+//                                     document.write("<td align ='center'>"+a.toFixed(4)+"</td>")
+//                                     document.write("<td align ='center'>"+b.toFixed(4)+"</td>")
+//                                     document.write("<td align ='center'>"+func(a).toFixed(4)+"</td>")
+//                                     document.write("<td align ='center'>"+func(b).toFixed(4)+"</td>")
+//                                     document.write("<td align ='center'>"+z.toFixed(4)+"</td>")
+//                                     document.write("<td align ='center'>"+func(z).toFixed(4)+"</td>")
+//                                 document.write("</tr>")
+//                             document.write("</tbody>")
+//                         document.write("</table>")
+                        
+                      
+//                         if (func(z) == 0.0){
+//                             break;
+//                         }else if(func(z)*func(a)<= 0){
+//                             b = z;
+//                         } else{
+//                             a = z;
+//                         }
+                        
+//                     i++;
+                        
+                    
+//                     }while(Math.abs(func(z)) > kenadeh)
+        
+//                     document.write("<br>");
+//                     document.write("Solusi Persamaan Non Linear : "+ z.toFixed(4));
+                    
+//                 } 
+            
+//                 let a = nama;
+//                 let b = bee;
+//                 bisection(a ,b);
+//             }       
+            
+</script>
+
+
+</html>
